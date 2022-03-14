@@ -1,0 +1,19 @@
+@use '../../styles/base';
+.title-section {
+  font-size: 22px;
+  font-weight: bold;
+  color: #171717;
+
+  @include base.for-desktops-only {
+    font-size: 29px;
+  }
+
+  &::after {
+    content: '';
+    margin-top: 1rem;
+    width: 162px;
+    height: 2px;
+    background-color: #f7b53d;
+    display: block;
+  }
+}

@@ -1,0 +1,44 @@
+@use '../../../styles/base';
+
+.card-item {
+  background-color: white;
+  box-shadow: 0px 3px 6px #00000029;
+  width: 100%;
+  max-width: 376px;
+  margin: 1rem auto;
+  border-radius: 12px;
+
+  @include base.for-desktops-only {
+    &:first-of-type {
+      margin-right: 1rem;
+    }
+    &:last-of-type {
+      margin-left: 1rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 376px;
+    max-height: 230px;
+    object-fit: cover;
+    border-start-end-radius: 12px;
+    border-start-start-radius: 12px;
+  }
+
+  &__title {
+    font-size: 20px;
+    text-align: center;
+    margin: 0.2rem 0;
+    color: #e8bb15;
+  }
+
+  &__btn {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: #bfbfbf;
+    cursor: pointer;
+    transform: translate(0, -5px);
+  }
+}

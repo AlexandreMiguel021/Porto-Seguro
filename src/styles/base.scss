@@ -1,0 +1,31 @@
+@mixin for-desktops-only {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-only {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-small-mobile-only {
+  @media (max-width: 339px) {
+    @content;
+  }
+}
+
+.section {
+  @include for-desktops-only {
+    max-width: 1166px;
+    margin: auto;
+  }
+}
+
+.container {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  max-width: 1366px;
+  margin: 0 auto;
+}

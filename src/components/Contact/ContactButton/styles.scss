@@ -1,0 +1,37 @@
+@use '../../../styles/base';
+
+.btn {
+  background-color: #f7b53d;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 12px;
+  width: 340px;
+  height: 90px;
+  margin: 1rem 0;
+
+  @include base.for-small-mobile-only {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  &__link {
+    display: block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__img {
+    width: 61px;
+    margin-right: 1rem;
+  }
+
+  &__text {
+    width: 208px;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}

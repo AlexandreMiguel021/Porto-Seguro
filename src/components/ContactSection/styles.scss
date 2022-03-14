@@ -1,0 +1,47 @@
+@use '../../styles/base';
+
+.section-contact {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include base.for-desktops-only {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__line {
+    display: none;
+
+    @include base.for-desktops-only {
+      display: block;
+      height: 488px;
+      border: 1px solid #707070;
+      opacity: 0.24;
+      margin: 0 4rem;
+    }
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0;
+
+    &__p {
+      font-size: 15px;
+      margin-left: 1rem;
+
+      @include base.for-desktops-only {
+        font-size: 20px;
+      }
+    }
+
+    &__img {
+      width: 101px;
+    }
+  }
+}

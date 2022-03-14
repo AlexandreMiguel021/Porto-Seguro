@@ -1,0 +1,41 @@
+@use '../../styles/base';
+.contact {
+  margin: 0.7rem 0 1rem;
+
+  @include base.for-desktops-only {
+    margin-bottom: 1rem;
+  }
+
+  .address {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: column;
+    height: 327px;
+
+    &__title {
+      font-size: 15px;
+      color: #4b4b4b;
+      font-weight: bold;
+
+      @include base.for-desktops-only {
+        font-size: 17px;
+      }
+    }
+
+    &__number {
+      font-size: 25px;
+      color: #e8bb15;
+      font-weight: bold;
+
+      @include base.for-desktops-only {
+        font-size: 29px;
+      }
+    }
+
+    &__time {
+      font-size: 13px;
+      color: #a7a7a7;
+    }
+  }
+}
