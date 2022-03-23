@@ -65,17 +65,3 @@ $ yarn
 $ yarn dev
 
 ```
-
----
-
-## 🙋 Notas finais
-
-Curti muito o desafio front-end, e olha, realmente foi bem desafiante haha, porém foi bem divertido e com certeza agregou muito valor a mim!<br>
-
-Super agredeço a Marlin pela oportunidade de poder participar deste desafio. :D
-
----
-
-<img width='250' src='https://cdn.discordapp.com/attachments/922557394419056671/923058762208653352/img-github.png'>
-
-> by Alexandre Miguel
